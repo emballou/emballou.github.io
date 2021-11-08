@@ -1,0 +1,94 @@
+:root {
+  --bg: #e8f4f8;
+  --bg2: #3f6a79;
+  --white: #ffffff;
+  --linkedin: #007bb5;
+  --github: #161b22;
+  --google: #dd4b39;
+  --text: black;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* SOCIAL MEDIA BUTTONS */
+.fa {
+  padding: 25px;
+  font-size: 40px;
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  margin: 25px 50px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-filter: brightness(100%);
+}
+
+.fa:hover {
+  color: white;
+  text-decoration: none;
+  -webkit-filter: brightness(75%);
+  -webkit-transform: scale(1.2);
+}
+
+.fa-linkedin {
+  background: var(--linkedin);
+  color: white;
+}
+
+.fa-github {
+  background: var(--github);
+  color: white;
+}
+
+.fa-google {
+  background: var(--google);
+  color: white;
+}
+
+/* AVATAR */
+
+.avatar {
+  vertical-align: middle;
+  max-height: 150px;
+  width: auto;
+  border-radius: 70%;
+  padding: 5px;
+  margin: 20px 20px 5px 20px;
+}
+
+.img-thumbnail {
+  box-shadow: 0 0 10px var(--bg2);
+}
+
+/*
+div.container > div {
+  margin-top: 25%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+*/
+
+.section {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  min-width: 100%;
+  min-height: 50vh;
+}
+
+#contact-section {
+  color: var(--bg);
+  background-color: var(--bg2);
+  padding: 1rem;
+  min-height: 25vh;
+}
+
+.footer {
+  background-color: darkgrey;
+}
+
+p {
+  text-indent: 30px;
+}

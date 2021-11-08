@@ -1,44 +1,105 @@
-<!--
- main.css
- Created by Larry Tseng on 4/28/21.
--->
-
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 <head>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <title>Name | Portfolio</title>
+    <title>Eric Ballou</title>
 </head>
 <body class="d-flex flex-column h-100">
     <div class="container" id="main-content">
         <!-- HEADER -->
         <div class="text-center">
-            <h2>Welcome to my portfolio.</h2>
-            <p class="lead">Customize this website to your liking.</p>
+            <img src="images/avatar.png" alt="Avatar" class="img-thumbnail img-fluid mx-auto avatar">
+            <h2>Eric Ballou</h2>
+            <p class="lead">
+                I am an undergraduate student at <a href="https://www.umass.edu" target="_blank">UMass Amherst</a> 
+                pursuing a Bachelor's degree in Computer Science expected to graduate in Spring 2022.
+            </p>
+        </div>
+        
+
+        <!-- COURSES -->
+        <div class="section" id="courses-section">
+            <h4 class="text-center">Coursework</h4>
+            <div>
+                <h5>Sample Course 1</h5>
+                <p>
+                    Lorem ipsum
+                </p>
+            </div>
+            <div>
+                <h5>Sample Course 2</h5>
+                <p>
+                    Lorem ipsum
+                </p>
+            </div>
+            <div>
+                <h5>Sample Course 2</h5>
+                <p>
+                    Lorem ipsum
+                </p>
+            </div>
         </div>
 
         <!-- PROJECTS -->
         <div class="section" id="projects-section">
             <h4 class="text-center">Projects</h4>
+            <div>
+                <h5>Sample Project 1</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div>
+                <h5>Sample Project 2</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </div>
 
-        <!-- CONTACT -->
-        <div class="section" id="contact-section">
-            <h4 class="text-center">Contact</h4>
+        <!-- SKILLS -->
+        <div class="section" id="skills-section">
+            <h4 class="text-center">Skills</h4>
+            <div>
+                <p>
+                    Java, C, C++, C#, JavaScript, HTML, CSS, SQL, PostgreSQL
+                </p>
+            </div>
         </div>
-
     </div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact-section">
+        <h4 class="text-center">Contact</h4>
+        <!-- Social Media -->
+        <div class="text-center">
+            <a href="https://www.linkedin.com/in/eric-ballou-777392198/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/emballou" target="_blank" class="fa fa-github"></a>
+            <a href="#" class="fa fa-google"></a> 
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">Created by the <a href="https://cics.umass.edu/careers">CICS Careers</a> team at
-                the <a href="https://umass.edu">University of Massachusetts Amherst</a>.</span>
+        <div class="text-center container">
+            <span class="text-muted">© 2021 Eric Ballou</span>
         </div>
     </footer>
     <script src="js/bootstrap.min.js"></script>
