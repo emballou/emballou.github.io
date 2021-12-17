@@ -1,11 +1,25 @@
 :root {
-  --bg: #c7c7c7;
-  --bg2: #3f6a79;
-  --white: #ffffff;
+  --a_text: #3f6a79;
+  --white: white;
+  --black: black;
   --linkedin: #007bb5;
   --github: #161b22;
   --google: #dd4b39;
+  --moon: #cde26f;
+}
+
+html[data-theme="light"] {
+  --icon: black;
+  --bg: #c7c7c7;
+  --bg2: #3f6a79;
   --text: black;
+}
+
+html[data-theme="dark"] {
+  --icon: white;
+  --bg: #212121;
+  --bg2: #3f6a79;
+  --text: white;
 }
 
 body {
@@ -15,69 +29,53 @@ body {
 
 
 /* FA BUTTONS */
+#contact-section {
+  background-color: var(--white);
+}
+
+#contact-section h4 {
+  color: var(--bg);
+}
+
 #contact-section .fa {
   padding: 25px;
-  font-size: 40px;
-  width: 120px;
+  font-size: 2em;
+  width: 3em;
   text-align: center;
   text-decoration: none;
-  margin: 25px 50px;
   border-radius: 50%;
+  margin: 15px 30px;
   -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -webkit-filter: brightness(100%);
   filter: brightness(100%);
 }
 
 #contact-section .fa:hover {
-  color: var(--bg);
+  color: var(--white);
   text-decoration: none;
   -webkit-filter: brightness(75%);
   filter: brightness(75%);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  box-shadow: 0 0 30px var(--bg);
+  box-shadow: 0 0 15px var(--white);
 }
 
-.fa-linkedin {
-  background: var(--linkedin);
-  color: var(--bg);
+#social-medias {
+  margin-bottom: 5px;
 }
 
-.fa-github {
-  background: var(--github);
-  color: var(--bg);
-}
-
-.fa-google {
-  background: var(--google);
-  color: var(--bg);
+.fa-linkedin, .fa-github-alt, .fa-envelope {
+  padding: .2em;
+  color: var(--icon);
 }
 
 .fa.fa-angle-down {
-  color: #000000;
+  color: var(--icon);
 }
 
 .fa.fa-angle-up {
   color: #000000;
   transform: none;
 }
-
-#theme-switch {
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-}
-
-
-.dark-mode-button.fa {
-  font-size: 3em;
-  padding: .25em;
-  background-color: black;
-  color: white;
-  border-radius: 1em;
-}
-
 
 /* AVATAR */
 .avatar {
@@ -91,7 +89,6 @@ body {
 .img-thumbnail {
   box-shadow: 0 0 10px var(--bg2);
 }
-
 
 #header-section {
   padding: 5%;
@@ -174,7 +171,11 @@ hr {
   border-top: 4px double #a3a3a3;
 }
 
-/* DARK MODE SLIDER */
-.dark {
-  background-color: yellow!important;
+a {
+  text-decoration: none;
+  color: var(--icon);
+}
+
+footer {
+  background-color: var(--bg);
 }
