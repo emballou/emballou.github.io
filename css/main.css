@@ -1,5 +1,5 @@
 :root {
-  --bg: #e8f4f8;
+  --bg: #c7c7c7;
   --bg2: #3f6a79;
   --white: #ffffff;
   --linkedin: #007bb5;
@@ -13,8 +13,9 @@ body {
   color: var(--text);
 }
 
-/* SOCIAL MEDIA BUTTONS */
-.fa {
+
+/* FA BUTTONS */
+#contact-section .fa {
   padding: 25px;
   font-size: 40px;
   width: 120px;
@@ -28,7 +29,7 @@ body {
   filter: brightness(100%);
 }
 
-.fa:hover {
+#contact-section .fa:hover {
   color: var(--bg);
   text-decoration: none;
   -webkit-filter: brightness(75%);
@@ -53,13 +54,36 @@ body {
   color: var(--bg);
 }
 
-/* AVATAR */
+.fa.fa-angle-down {
+  color: #000000;
+}
 
+.fa.fa-angle-up {
+  color: #000000;
+  transform: none;
+}
+
+#theme-switch {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+
+.dark-mode-button.fa {
+  font-size: 3em;
+  padding: .25em;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+}
+
+
+/* AVATAR */
 .avatar {
-  vertical-align: middle;
-  max-height: 150px;
-  width: auto;
-  border-radius: 70%;
+  max-width: 15%;
+  height: auto;
+  border-radius: 50%;
   padding: 5px;
   margin: 20px 20px 5px 20px;
 }
@@ -68,19 +92,40 @@ body {
   box-shadow: 0 0 10px var(--bg2);
 }
 
-/*
-div.container > div {
-  margin-top: 25%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+
+#header-section {
+  padding: 5%;
 }
-*/
+
+.header1 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;  
+  position: relative;
+}
+
+.info1 {
+  box-sizing: border-box;
+  padding: 0 50px;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  vertical-align: top;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.header1 h2 {
+  font-family: 'Gentium Basic', serif;
+  font-size: 37.5;
+  font-weight: bold;
+}
 
 .section {
   padding-top: 1rem;
   padding-bottom: 2rem;
   min-width: 100%;
-  min-height: 25vh;
+  min-height: 40vh;
 }
 
 #contact-section {
@@ -89,11 +134,6 @@ div.container > div {
   padding: 1rem;
   min-height: 25vh;
 }
-
-.footer {
-  background-color: darkgrey;
-}
-
 
 .skills-block {
   display: inline-block;
@@ -105,9 +145,36 @@ div.container > div {
   color:#ffffff;
   background-color:var(--bg2);
   border-radius:5px;
-  border:1px solid transparent
+  border: 1px solid transparent;
+}
+
+.skills-block.purple {
+  background-color:rgb(122, 113, 202);
+}
+
+.skills-block.maroon {
+  background-color:maroon;
+}
+
+.skills-block.green {
+  background-color:forestgreen;
 }
 
 .indent {
   text-indent: 30px;
+}
+
+h4 {
+  /* text-shadow: var(--bg2) 0px 0px 2px; */
+  padding-bottom: 10px;
+}
+
+hr {
+  margin: 0;
+  border-top: 4px double #a3a3a3;
+}
+
+/* DARK MODE SLIDER */
+.dark {
+  background-color: yellow!important;
 }

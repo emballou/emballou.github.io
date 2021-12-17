@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 <head>
-
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
+    <link href="css/slider.css" rel="stylesheet">
     <title>Eric Ballou</title>
 </head>
+
 <body class="d-flex flex-column h-100">
     <div class="container" id="main-content">
         <!-- HEADER -->
-        <div class="text-center" id="header-section">
-            <img src="images/avatar.png" alt="Avatar" class="img-thumbnail img-fluid mx-auto avatar">
+        <!-- 
+        <div class="content-row row" id="header-section">
+            <img src="images/irl.jpg" alt="Avatar" class="img-md hidden-xs img-responsive img-thumbnail avatar">
             <h2>Eric Ballou</h2>
             <p class="lead">
                 Senior Computer Science Student @ UMass Amherst
             </p>
         </div>
-
+        -->
+        <div class="header1">
+            <div class="avatar1">
+              <img src="images/irl.jpg" alt="Avatar" class="img-md hidden-xs img-responsive avatar"/>
+            </div>
+            <div class="info1">
+                <h2>Eric Ballou</h2>
+                <p class="lead">Senior Computer Science Student @ UMass Amherst</p>
+            </div>
+        </div>
+        <hr>
         <!-- ABOUT ME -->
         <div class="section" id="about-section">
             <h4 class="text-center">About Me</h4>
@@ -37,6 +50,13 @@
             </div>
         </div>
 
+        <div class="text-center">
+            <a href="#education-section"> 
+                <div class="fa fa-angle-down"></div>
+            </a>
+        </div>
+
+        <hr>
         <!-- EDUCATION -->
         <div class="section container-fluid container-constrained" id="education-section">
             <h4 class="text-center">Education</h4>
@@ -72,66 +92,18 @@
             </div>
         </div>
 
-        <!-- COURSES -->
-        <div class="section" id="courses-section">
-            <h4 class="text-center">Relevant Coursework</h4>
-            <div class=>
-                <div>
-                    <h5>Web Programming (CS326)</h5>
-                    <h6 class="">Projects: </h6>
-                    <p class="indent">
-                        <a href="https://www.youtube.com/watch?v=zvhawDTPxRU" target="_blank">Productivity Hub</a>
-                    </p>
-                    <div class="col-9 col-sm-10 text-left">
-                        <div class="skills-block">HTML</div>
-                        <div class="skills-block">CSS</div>
-                        <div class="skills-block">JavaScript</div>
-                        <div class="skills-block">SQL</div>
-                    </div>
-                </div>
-                <div class="mt-xl-5">
-                    <h5>Search Engines (CS446)</h5>
-                    <h6 class="">Projects: </h6>
-                    <p class="indent">
-                        Search Engine
-                    </p>
-                    <div class="col-9 col-sm-10 text-left">
-                        <div class="skills-block">Java</div>
-                    </div>
-                </div>
-                <div class="mt-xl-5">
-                    <h5>Computer Systems Principles (CS230)</h5>
-                    <h6 class="">Projects: </h6>
-                    <p class="indent">
-                        <a href="https://www.youtube.com/watch?v=49A3aoeDmIo" target="_blank">Hey! That's My Fish!</a>
-                    </p>
-                    <p class="indent">
-                        <a href="https://www.youtube.com/watch?v=OFa692UnTUc" target="_blank">Adventure Game</a>
-                    </p>
-                    <div class="col-9 col-sm-10 text-left">
-                        <div class="skills-block">C</div>
-                    </div>
-                </div>
-                <div class="mt-xl-5">
-                    <h5>Game Programming (CS576)</h5>
-                    <h6 class="">Projects: </h6>
-                    <p class="indent">
-                        <a href="#" target="_blank">Truck Game</a>
-                    </p>
-                    <p class="indent">
-                        <a href="#" target="_blank">Pendulum Simulator</a>
-                    </p>
-                    <div class="col-9 col-sm-10 text-left">
-                        <div class="skills-block">C#</div>
-                        <div class="skills-block">Unity</div>
-                    </div>
-                </div>
-            </div>
+        <div class="text-center">
+            <a href="#courses-section"> 
+                <div class="fa fa-angle-down"></div>
+            </a>
         </div>
 
+        <hr>
         <!-- PROJECTS -->
         <div class="section" id="projects-section">
             <h4 class="text-center">Projects</h4>
+
+            <!-- Website -->
             <div class=>
                 <h5>Personal Website</h5>
                 <p class="indent">
@@ -140,18 +112,61 @@
                     myself with Bootstrap, as well as further practice previous skills such as HTML, CSS, and JavaScript.
                 </p>
             </div>
-            <div class="mt-xl-5">
-                <h5>Sample Project 2</h5>
-                <p class="indent">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <div class="col-9 col-sm-10 text-left">
+                <div class="skills-block purple">Personal</div>
+                <div class="skills-block maroon">HTML</div>
+                <div class="skills-block maroon">CSS</div>
+                <div class="skills-block">JavaScript</div>
             </div>
+
+            <!-- PolyTrucker -->
+            <div class="mt-xl-5">
+                <h5>PolyTrucker</h5>
+                <p class="indent">
+                    PolyTrucker is an arcade low-poly truck driving game. The game features missions 
+                    in which you must pick up cargo using a truck, and then deliver them, making sure to avoid 
+                    any terrain and animals as you make your way to the drop off point. You are scored based
+                    on how fast you delivered the cargo, minus points for hitting animals. This game was built 
+                    as a group project in CS576. In terms of production, I was solely responsible for the UI
+                    of the game, including but not limited to the main menu, pause menu and the in-game HUD.
+                    I was also responsible for creating the animal-based AI for the game, which acts as an enemy
+                    AI in regards to the game itself.
+                </p>
+                <div class="col-9 col-sm-10 text-left">
+                    <div class="skills-block purple">CS576</div>
+                    <div class="skills-block">C#</div>
+                    <div class="skills-block green">Unity</div>
+                </div>
+            </div>
+
+            <!-- Productivity Hub -->
+            <div class="mt-xl-5">
+                <h5>Productivity Hub</h5>
+                <p class="indent">
+                    Productivity Hub is a scheduling website used to organize the various logistical needs of a
+                    user's day-to-day life. This site was built as a group project for CS326. My role in the project
+                    was the school webpage, and also worked closely with another member to help with user authentication
+                    to allow for individual accounts.
+                </p>
+                <div class="col-9 col-sm-10 text-left">
+                    <div class="skills-block purple">CS326</div>
+                    <div class="skills-block maroon">HTML</div>
+                    <div class="skills-block maroon">CSS</div>
+                    <div class="skills-block">JavaScript</div>
+                    <div class="skills-block">SQL</div>
+                </div>
+            </div>
+
+
         </div>
 
+        <div class="text-center">
+            <a href="#skills-section"> 
+                <div class="fa fa-angle-down"></div>
+            </a>
+        </div>
+
+        <hr>
         <!-- SKILLS -->
         <div class="section" id="skills-section">
             <h4 class="text-center">Skills</h4>
@@ -161,8 +176,23 @@
                 </p>
             </div>
         </div>
+
+        <!-- DARK MODE -->
+        <div id="theme-switch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </div>
 
+    <div class="text-center">
+        <a href="#main-content"> 
+            <div class="fa fa-angle-up"></div>
+        </a>
+    </div>
+
+    <hr>
     <!-- CONTACT -->
     <div class="section" id="contact-section">
         <h4 class="text-center">Contact</h4>
@@ -173,13 +203,14 @@
             <a href="#" class="fa fa-google"></a> 
         </div>
     </div>
-
+    
     <!-- FOOTER -->
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3">
         <div class="text-center container">
-            <span class="text-muted">© 2021 Eric Ballou</span>
+            <span>© 2021 Eric Ballou</span>
         </div>
     </footer>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
