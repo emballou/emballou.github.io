@@ -5,6 +5,10 @@ A starter personal portfolio project using web technologies
 ```
 /
 ├── index.html      <- edit structure
+└── css
+|     └── main.css
+|     └── bootstrap
+└── images
 └── README.md
 ```
 
