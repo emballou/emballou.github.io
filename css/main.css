@@ -11,16 +11,18 @@
 
 html[data-theme="light"] {
   --icon: black;
-  --bg: #c7c7c7;
+  --icon-highlight: rgb(95, 158, 160);
+  --bg: #fffffa;
   --bg2: #3f6a79;
-  --text: black;
+  --text: #333;
 }
 
 html[data-theme="dark"] {
   --icon: white;
+  --icon-highlight: CadetBlue;
   --bg: #212121;
   --bg2: #3f6a79;
-  --text: white;
+  --text: #fffffa;
 }
 
 body {
@@ -71,11 +73,13 @@ body {
 
 .fa.fa-angle-down {
   color: var(--icon);
+  font-size: 1.5em;
 }
 
 .fa.fa-angle-up {
-  color: #000000;
+  color: var(--icon);
   transform: none;
+  font-size: 1.5em;
 }
 
 /* AVATAR */
@@ -123,7 +127,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 2rem;
   min-width: 100%;
-  min-height: 40vh;
+  min-height: 25vh;
 }
 
 #contact-section {
@@ -177,6 +181,12 @@ a {
   color: var(--icon);
 }
 
+a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--icon);
+}
+
 footer {
   background-color: var(--black);
   color: white;
@@ -184,4 +194,18 @@ footer {
 
 div#projects-section div.project {
   padding-top: 1em;
+}
+
+.outline {
+  border-bottom: 3px solid rgba(95, 158, 160, .75);
+  background-color: rgba(95, 158, 160, .25);
+  padding: 0px 2px;
+}
+
+.extra {
+  font-size: .7em;
+}
+
+.fa:hover {
+  color: var(--icon-highlight);
 }
