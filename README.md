@@ -8,6 +8,7 @@ A starter personal portfolio project using web technologies
 └── js
 |     └── script.js
 └── css
+|     └── slider.css
 |     └── main.css
 |     └── bootstrap
 └── images
