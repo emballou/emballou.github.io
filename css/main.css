@@ -181,3 +181,7 @@ footer {
   background-color: var(--black);
   color: white;
 }
+
+div#projects-section div.project {
+  padding-top: 1em;
+}
