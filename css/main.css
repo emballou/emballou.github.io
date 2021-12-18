@@ -6,6 +6,7 @@
   --github: #161b22;
   --google: #dd4b39;
   --moon: #cde26f;
+  scroll-behavior: smooth;
 }
 
 html[data-theme="light"] {
@@ -177,5 +178,6 @@ a {
 }
 
 footer {
-  background-color: var(--bg);
+  background-color: var(--black);
+  color: white;
 }
