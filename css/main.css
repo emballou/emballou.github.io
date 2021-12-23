@@ -13,6 +13,7 @@ html[data-theme="light"] {
   --icon: black;
   --icon-highlight: rgb(95, 158, 160); /* cadet blue */
   --bg: #fffffa;
+  --bg-off: #e2e2e2;
   --bg2: #3f6a79;
   --text: #333;
 }
@@ -21,6 +22,7 @@ html[data-theme="dark"] {
   --icon: white;
   --icon-highlight: rgb(95, 158, 160); /* cadet blue */
   --bg: #212121;
+  --bg-off: #131313;
   --bg2: #3f6a79;
   --text: #fffffa;
 }
@@ -30,6 +32,19 @@ body {
   color: var(--text);
 }
 
+#about-section,
+#now-section,
+#education-section,
+#projects-section,
+#skills-section {
+  background-color: var(--bg-off);
+  padding: 0 3em;
+}
+
+.page {
+  margin-bottom: 3em;
+  box-shadow: 5px 5px 12px 1px var(--icon);
+}
 
 /* FA BUTTONS */
 #contact-section {
