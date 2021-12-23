@@ -1,6 +1,13 @@
+
+
+
 function onLoad() {
+    // theme switcher
     let themeSwitcher = document.querySelector("#theme-switch");
     themeSwitcher.addEventListener("mouseup", themeSwitch, false);
+
+    // on scroll header
+    
 }
 
 function themeSwitch() {
@@ -10,6 +17,10 @@ function themeSwitch() {
         newTheme = "dark";
     }
     document.documentElement.setAttribute("data-theme", newTheme);
+}
+
+function onScrollHeader() {
+
 }
 
 onLoad();

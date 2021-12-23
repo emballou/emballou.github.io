@@ -13,7 +13,7 @@ html[data-theme="light"] {
   --icon: black;
   --icon-highlight: rgb(95, 158, 160); /* cadet blue */
   --bg: #fffffa;
-  --bg-off: #e2e2e2;
+  --bg-off: #eff1f7;
   --bg2: #3f6a79;
   --text: #333;
 }
@@ -31,12 +31,21 @@ body {
   background-color: var(--bg);
   color: var(--text);
   min-height: 100%;
+  font-size: 1.2em;
 }
 
-#about-section, #now-section, #education-section, 
-#projects-section, #skills-section {
+#header-section, #about-section, #now-section, 
+#education-section, #projects-section, #skills-section {
   background-color: var(--bg-off);
-  padding: 0 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#header-section {
+  padding: 4em!important;
+  margin: 3em auto;
+  left: 0;
+  top: 0;
 }
 
 @keyframes highlightIn {
@@ -98,15 +107,21 @@ body {
   box-shadow: 0 0 10px var(--bg2);
 }
 
-#header-section {
-  padding: 5%;
+h2, h3, h4, h5 {
+  font-family: 'Gentium Basic', serif;
+  font-weight: bold;
 }
 
-
-h2.header {
-  font-family: 'Gentium Basic', serif;
+h2 {
   font-size: 2em;
-  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.2em;
 }
 
 .skills-block {
