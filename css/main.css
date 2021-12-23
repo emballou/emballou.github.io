@@ -117,17 +117,10 @@ body {
   transform: translateY(-50%);
 }
 
-.header1 h2 {
+h2.header {
   font-family: 'Gentium Basic', serif;
-  font-size: 37.5;
+  font-size: 2em;
   font-weight: bold;
-}
-
-.section {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  min-width: 100%;
-  min-height: 25vh;
 }
 
 #contact-section {
