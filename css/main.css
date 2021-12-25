@@ -39,6 +39,10 @@ body {
   background-blend-mode: multiply;
   */
 }
+div#main-content {
+  width: 75vw;
+  max-width: 100%;
+}
 
 *::selection {
   color: var(--icon-highlight);
