@@ -58,7 +58,7 @@ div#main-content {
 
 nav {
   color: var(--text);
-  background-color: var(--bg);
+  background-color: var(--icon-highlight);
 }
 
 #header-section {
@@ -259,14 +259,10 @@ div#projects-section div.project {
 .preview-section {
   z-index: 999;
   top: 12vh;
-  left: 25px;
+  left: 20px;
   height: 76vh;
-  width: 100px;
+  width: 10vw;
   opacity: 1;
-  transition-property: all;
-  transition-duration: .2s;
-  mix-blend-mode: difference;
-  transform: translateX();
 }
 
 ul.preview-section-list {
@@ -292,27 +288,29 @@ ul.preview-section-list {
   background-color: var(--icon-highlight);
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 0px;
   width: 7px;
   height: 7px;
   content: "";
 }
 
-.preview-section-info {
-  color: var(--icon-highlight);
-  opacity: 1;
-  font-size: .4em;
-}
-
-
 .preview-section-btn.active .preview-section-square:before {
   color: var(--icon-highlight);
+  background-color: var(--icon-highlight);
   opacity: 1;
-  font-size: .8em!important;
   width: 20px;
   height: 20px;
   top: 0;
   left: 0;
+}
+
+.preview-section-info {
+  color: var(--icon-highlight);
+  font-size: .5em;
+}
+
+.f-1 {
+  font-size: 1.0em!important;
 }
 
 *, ::before, ::after {
