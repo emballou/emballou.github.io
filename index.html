@@ -2,6 +2,7 @@
 <html lang="en" class="h-100" data-theme="dark">
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap" rel="stylesheet">
@@ -17,8 +18,43 @@
 
 <body>
     <div class="container-fluid w-75" id="main-content">
+        <!-- TIMELINE -->
+        <div class="preview-section position-fixed" id="preview-section">
+            <ul class="preview-section-list position-relative d-flex flex-column justify-content-between">
+                <li class="preview-section-btn" id="lateral-header">
+                    <span class="preview-section-square d-block position-relative"></span>
+                    <span class="preview-section-info pl-3 text-uppercase">HEADER</span>
+                </li>
+
+                <li class="preview-section-btn" id="lateral-about">
+                    <span class="preview-section-square d-block position-relative"></span>
+                    <span class="preview-section-info pl-3 text-uppercase">ABOUT ME</span>
+                </li>
+
+                <li class="preview-section-btn" id="lateral-now">
+                    <span class="preview-section-square d-block position-relative"></span>
+                    <span class="preview-section-info pl-3 text-uppercase">WHAT'S NOW?</span>
+                </li>
+
+                <li class="preview-section-btn" id="lateral-education">
+                    <span class="preview-section-square d-block position-relative"></span>
+                    <span class="preview-section-info pl-3 text-uppercase">EDUCATION</span>
+                </li>
+
+                <li class="preview-section-btn" id="lateral-projects">
+                    <span class="preview-section-square d-block position-relative"></span>
+                    <span class="preview-section-info pl-3 text-uppercase">PROJECTS</span>
+                </li>
+
+                <li class="preview-section-btn" id="lateral-skills">
+                    <span class="preview-section-square d-block position-relative"></span>
+                    <span class="preview-section-info pl-3 text-uppercase">SKILLS</span>
+                </li>
+            </ul>
+        </div>
+
         <!-- HEADER -->
-        <div class="page" id="header-section">
+        <div class="page p-5" id="header-section">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="
                 offset-3 col-6 pb-3
@@ -69,6 +105,7 @@
                     listening to music, playing/watching videogames, and following the NBA.
                 </p>
             </div>
+
             <div class="text-center">
                 <a href="#now-section"> 
                     <div class="fa fa-angle-down"></div>
@@ -160,7 +197,6 @@
         <!-- PROJECTS -->
         <div class="page pt-3" id="projects-section">
             <h4 class="text-center">Projects</h4>
-
             <!-- Website -->
             <div class="project">
                 <h5>Personal Website</h5>
