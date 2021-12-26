@@ -85,13 +85,21 @@ nav {
 
 
 @keyframes highlightIn {
-  0% { box-shadow: 0px 0px 5px 5px var(--bg-off); }
-  100% { box-shadow: 0px 0px 5px 5px var(--icon-highlight); }
+  0% { 
+    box-shadow: 0px 0px 5px 5px var(--bg-off); 
+  }
+  100% { 
+    box-shadow: 0px 0px 5px 5px var(--icon-highlight); 
+  }
 }
 
 @keyframes highlightOut {
-  0% { box-shadow: 0px 0px 5px 5px var(--icon-highlight); }
-  100% { box-shadow: 0px 0px 5px 5px var(--bg-off); }
+  0% { 
+    box-shadow: 0px 0px 5px 5px var(--icon-highlight); 
+  }
+  100% { 
+    box-shadow: 0px 0px 5px 5px var(--bg-off); 
+  }
 }
 
 .page {
@@ -102,20 +110,13 @@ nav {
 
 .page-highlight-off {
   box-shadow: 0px 0px 5px 5px var(--bg-off);
-  animation: highlightOut .5s linear 0s normal;
+  animation: highlightOut .5s;
 }
 
 .page-highlight-on {
-  box-shadow: 0px 0px 5px 5px var(--icon-highlight)!important;
-  animation: highlightIn .5s linear 0s normal;
-}
-
-/* 
-.page:hover {
   box-shadow: 0px 0px 5px 5px var(--icon-highlight);
-  animation: highlightIn .5s linear 0s normal;
-} 
-*/
+  animation: highlightIn .5s;
+}
 
 /* FA BUTTONS */
 .social-medias a:hover {
